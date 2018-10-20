@@ -1,0 +1,50 @@
+/*keep all the children inside the parent*/
+/**{ box-sizing: border-box; }*/
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+.grid {
+  display: grid;
+  grid-gap: 1px;
+}
+
+
+.grid > * {
+  border: 1px solid purple;
+}
+
+.fixedBar {
+  grid-column: 1/4;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+.navBar {
+  text-align: center;
+}
+
+.tours {
+  grid-column:1/2;
+}
+.aboutUs {
+    grid-column:2/3;
+}
+.hotels {
+    grid-column:3/4;
+}
+.bigPicture {
+    grid-column:1/4;
+}
+.firstPic {
+    grid-column:1/3;
+}
+.secondPic {
+  grid-column: 3/4;
+}
+.bottom {
+    grid-column:1/4;
+}
+
+img {
+  width: 100%;
+}
